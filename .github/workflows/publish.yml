@@ -1,14 +1,12 @@
 name: Publish npm Package
 
 on:
-  workflow_dispatch:
-  # TODO: comment out for real usage
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 permissions:
-  contents: read
+  contents: write
   packages: write
 
 jobs:
@@ -46,7 +44,7 @@ jobs:
 
       - name: Commit & push version bump
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git add package.json
@@ -67,8 +65,6 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@crow-b3'
       - uses: pnpm/action-setup@v4
-        with:
-          version: 8
       - run: pnpm install
       - run: pnpm build
       - run: pnpm publish --no-git-checks
