@@ -1,1 +1,1 @@
-export type HelloWord = {};
+export type HelloWorld = {};
