@@ -5,7 +5,7 @@ A ready-to-go TypeScript/JavaScript SDK package starter, with linting, testing, 
 ## Installation
 
 ```bash
-pnpm install @crow-b3/npm-sdk-template
+bun install @crow-b3/npm-sdk-template
 ```
 
 ## Usage
@@ -18,16 +18,16 @@ import {} from '@crow-b3/npm-sdk-template';
 
 ```bash
 # Install dependencies
-pnpm install
+bun install
 
 # Build
-pnpm build
+bun build
 
 # Lint
-pnpm lint
+bun lint
 
 # Format code
-pnpm format
+bun format
 ```
 
 ## License
