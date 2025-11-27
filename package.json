@@ -1,5 +1,5 @@
 {
-  "name": "@crow-b3/npm-sdk-template",
+  "name": "@b3-crow/npm-sdk-template",
   "version": "0.0.2",
   "description": "A ready-to-go TypeScript/JavaScript SDK package starter, with linting, testing, build & publish workflows included.",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "url": "https://github.com/CROW-B3/npm-sdk-template.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "author": "CROW By B3",
   "license": "MIT",

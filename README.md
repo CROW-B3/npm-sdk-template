@@ -5,13 +5,13 @@ A ready-to-go TypeScript/JavaScript SDK package starter, with linting, testing, 
 ## Installation
 
 ```bash
-bun install @crow-b3/npm-sdk-template
+bun install @b3-crow/npm-sdk-template
 ```
 
 ## Usage
 
 ```typescript
-import {} from '@crow-b3/npm-sdk-template';
+import {} from '@b3-crow/npm-sdk-template';
 ```
 
 ## Development

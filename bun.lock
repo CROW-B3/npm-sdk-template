@@ -1,8 +1,9 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "@crow-b3/npm-sdk-template",
+      "name": "@b3-crow/npm-sdk-template",
       "devDependencies": {
         "@antfu/eslint-config": "^6.2.0",
         "@commitlint/config-conventional": "^20.0.0",
