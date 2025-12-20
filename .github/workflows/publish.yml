@@ -68,7 +68,7 @@ jobs:
         with:
           bun-version-file: '.bun-version'
       - run: bun install
-      - run: bun build
+      - run: bun run build
       - run: bun publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
