@@ -97,7 +97,7 @@ jobs:
           script: |
             const packageName = '${{ steps.package.outputs.name }}';
             const version = '${{ steps.preview_version.outputs.version }}';
-            const comment = `## 📦 Preview Package Published
+            const comment = `## Preview Package Published
 
             A preview version of this package has been published to npm!
 
