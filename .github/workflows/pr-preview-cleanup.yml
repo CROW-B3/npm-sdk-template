@@ -87,15 +87,15 @@ jobs:
 
             if npm unpublish "$version" 2>&1; then
               echo "Successfully unpublished $version"
-              ((success_count++))
+              success_count=$((success_count + 1))
             else
               echo "Unpublish failed - attempting to deprecate instead"
               if npm deprecate "$version" "This PR preview version is no longer needed and should not be used." 2>&1; then
                 echo "Successfully deprecated $version"
-                ((success_count++))
+                success_count=$((success_count + 1))
               else
                 echo "Failed to unpublish or deprecate $version"
-                ((failure_count++))
+                failure_count=$((failure_count + 1))
                 failed_versions+=("$version")
               fi
             fi
