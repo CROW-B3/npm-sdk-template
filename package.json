@@ -23,7 +23,7 @@
   "license": "MIT",
   "packageManager": "bun@1.1.0",
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
+    "@antfu/eslint-config": "^7.3.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint-react/eslint-plugin": "^2.3.7",
     "commitlint": "^20.1.0",
